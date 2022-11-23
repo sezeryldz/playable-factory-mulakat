@@ -1,6 +1,6 @@
 import express from 'express'
 import userService from '../services/prisma.users.service'
-
+const path = require('path')
 // jsonwebtoken library is for generating jwt tokens
 import jwt from 'jsonwebtoken'
 
@@ -150,7 +150,7 @@ class UsersMiddleware {
   }
 
   async serveStatic(req: express.Request, res: express.Response, next: express.NextFunction) {
-    res.send('index.html')
+    res.sendFile(path.join(__dirname, '../../public/index.html'))
   }
 }
 

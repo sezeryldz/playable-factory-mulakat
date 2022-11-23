@@ -60,6 +60,9 @@ export class UsersRoutes extends CommonRoutesConfig {
       .delete(UsersMiddleware.validateUserExists, UsersController.removeUser)
 
     this.app.route('/').get(usersMiddleware.serveStatic)
+    this.app.route('/login').get(usersMiddleware.serveStatic)
+    this.app.route('/register').get(usersMiddleware.serveStatic)
+    this.app.route('/todo').get(usersMiddleware.serveStatic)
 
     return this.app
   }

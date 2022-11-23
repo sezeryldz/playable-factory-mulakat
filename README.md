@@ -20,13 +20,7 @@ How to run the project:
 
 Postman Collection:  
 Is in main folder of the project;  
-Ronwell Api Mulakat.postman_collection.json
-
-Jest Tests:  
-First we are doing a general check;  
-Creates 3 users, lists all of them, then lists one and deletes that one.  
-Then we imitate a user:  
-Registers as B2B user then logs in to get access token, resets the password, then creates a b2c account that is connected to him.
+Playable Factory Mulakat.postman_collection.json
 
 Notes:  
 Prisma reset/full wipe database:  
